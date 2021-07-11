@@ -5,19 +5,19 @@
     overflow-x: hidden;
 }
 :root {
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(253, 169, 154));
+    background-image: linear-gradient(rgba(213, 198, 255, 0.849), #8c74b9e8);
     background-size: 100% 100%;  
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 body {
 }
-body aside {
+body #navbar {
     display: fixed;
     left: 0;
     top:0;
     float: left;
-    background-color: rgb(250, 137, 117);
-    border: 5px solid #ff6347;
+    background-color: #252525;
+    border: 5px solid #000000;
     width: 22vw;
     height: 100vh;
     box-sizing: border-box;
@@ -26,10 +26,10 @@ body aside {
 }
 #header {
     padding: 25px;
-    border-bottom: 5px solid tomato;
-    font-family:fantasy;
-    color: rgb(44, 1, 1);
-    
+    border-bottom: 5px solid #000000    ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 2px;
     font-size: 23px;
 }
 
@@ -40,37 +40,58 @@ ul {
 }
 ul li {
     margin: 20px 0px;
+
+}
+li {
+    
+    list-style-type: none;
 }
 .nav-link { 
     display: block;
-    background-color: tomato;
-    border: 2px solid rgb(255, 71, 39);
+    background: linear-gradient(#450fa8, #6441a5);
     border-radius: 10px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 1px 1px rgb(255, 169, 154);
-    color: black;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px black;
     text-decoration: none;
-    box-shadow: 2px 2px 2px gray;
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     width: 50%;
     margin: auto;
     font-size: 20px;
+}
+.nav-link:hover {
+    filter:saturate(60%);
+    filter:hue-rotate(-7deg);
+    
+
 }
 header:not(#header) {
     font-size: 23px;
     font-family:fantasy;
     letter-spacing: 5px;
+    padding: 10px;
 
 }
 #main-doc {
     width: 78vw;
     height: 120vh;
     margin-left: 22vw;
+    
     overflow-y:scroll;
 
 }
 section {
     height: 100vh;
     padding: 10vh 2vw;
-    background: linear-gradient(to left, #12b0cc, #46e2ff);
+}
+
+p {
+    margin-right: 20vw;
+    margin-top: 5vh;
+}
+@media query (max-width="700px") {
+
+}
+p {
+    padding-right: 30px;
 }
